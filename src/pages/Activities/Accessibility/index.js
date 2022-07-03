@@ -45,7 +45,13 @@ export default function Accessibility() {
                                 }
                             }
                             return (
-                                <CrContent mediatype="image" src={`http://135.181.200.92:3005/${post.headImage}`} title={post.title} caption={post.body} />
+                                <div>
+                                    <CrContent mediatype="image" src={`https://api.mamadaliyev.uz/imkoniyat/${post.headImage}`} title={post.title} caption={post.body} />
+                                    <div className='admin-tools'>
+                                        <button onClick={handleDelete}><i className="fa-solid fa-trash"></i> {t("delete_button")}</button>
+                                        {/* <button onClick={handleEdit}>{t("edit_button")}</button> */}
+                                    </div>
+                                </div>
                             )
 
                         })

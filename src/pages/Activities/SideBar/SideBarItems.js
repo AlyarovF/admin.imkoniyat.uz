@@ -1,26 +1,26 @@
 export const SideBarItems = [
     {
-        title: "2020 Report",
+        key: "sidebar_report2020",
         url: "/report2020",
         cName: "bar-links"
     },
     {
-        title: "2019 Report",
+        key: "sidebar_report2019",
         url: "/report2019",
         cName: "bar-links"
     },
     {
-        title: "Accessibility",
+        key: "sidebar_accessibility",
         url: "/accessibility",
         cName: "bar-links"
     },
     {
-        title: "Seminars and conferences",
+        key: "sidebar_seminars",
         url: "/seminars",
         cName: "bar-links"
     },
     {
-        title: "Sessions of the boards",
+        key: "sidebar_sessions",
         url: "/sessions",
         cName: "bar-links"
     },

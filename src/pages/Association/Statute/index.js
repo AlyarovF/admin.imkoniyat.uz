@@ -42,7 +42,13 @@ export default function Statute() {
                                 }
                             }
                             return (
-                                <CrContent title={post.title} caption={post.body} />
+                                <div>
+                                    <CrContent title={post.title} caption={post.body} />
+                                    <div className='admin-tools'>
+                                        <button onClick={handleDelete}><i className="fa-solid fa-trash"></i> {t("delete_button")}</button>
+                                        {/* <button onClick={handleEdit}>{t("edit_button")}</button> */}
+                                    </div>
+                                </div>
                             )
 
                         })

@@ -3,10 +3,12 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import './index.css'
 import { options } from './options';
+import { useTranslation } from 'react-i18next';
 
 import api from "../../api/posts"
 
 export default function Editor() {
+    const { t } = useTranslation()
 
     const [bodyCK, setBodyCK] = useState('');
 
@@ -69,10 +71,10 @@ export default function Editor() {
 
             const data = await api.post('/post', postData);
 
-            alert("Success")
+            alert(t("editor_success"))
         } catch (err) {
             console.log(`Error: ${err.message}`)
-            alert("Yuklanmadi!")
+            alert(t("editor_error"))
         }
 
     }
@@ -85,23 +87,23 @@ export default function Editor() {
         <div className="EditorCk container">
             <form onSubmit={handleSubmit}>
                 <div className='EditorCk-item'>
-                    <label>Bo'lim</label>
+                    <label>{t("editor_section")}</label>
                     <select value={post.menuId} name="menuId" onChange={handleChange}>
                         {options.map((option) => (
-                            <option value={option.value}>{option.label}</option>
+                            <option value={option.value}>{t(option.lable)}</option>
                         ))}
                     </select>
                 </div>
                 <div className='EditorCk-item'>
-                    <label>Sarlavha</label>
-                    <input type="text" name="title" onChange={handleChange} placeholder='News title...' value={post.title} required />
+                    <label>{t("editor_title")}</label>
+                    <input type="text" name="title" onChange={handleChange} placeholder='' value={post.title} required />
                 </div>
                 <div className='EditorCk-item'>
-                    <label>Kichik sarlavha</label>
-                    <input type="text" name="shortText" onChange={handleChange} placeholder='Short text...' value={post.shortText} />
+                    <label>{t("editor_shortTitle")}</label>
+                    <input type="text" name="shortText" onChange={handleChange} placeholder='' value={post.shortText} />
                 </div>
                 <div className='EditorCk-item'>
-                    <label>Fayl yuklash</label>
+                    <label>{t("editor_file")}</label>
                     <input type="file" onChange={handleInputChange} />
                 </div>
                 <CKEditor
@@ -115,7 +117,7 @@ export default function Editor() {
                     }}
                 />
 
-                <input className='submitButton' type='submit' value='Submit' />
+                <input className='submitButton' type='submit' value={t("editor_submit")} />
             </form>
         </div>
     );

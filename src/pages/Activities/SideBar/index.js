@@ -2,8 +2,10 @@ import React from 'react'
 import { SideBarItems } from './SideBarItems'
 import { Link, Outlet } from 'react-router-dom'
 import './index.css'
+import { useTranslation } from 'react-i18next'
 
 export default function SideBar() {
+    const { t } = useTranslation()
     return (
         <div className='sideBar'>
             <ul>
@@ -12,7 +14,7 @@ export default function SideBar() {
                         <li key={index}>
                             <Link to={item.url} className={item.cName}>
                                 <span>
-                                    {item.title}
+                                    {t(item.key)}
                                 </span>
                             </Link>
                         </li>

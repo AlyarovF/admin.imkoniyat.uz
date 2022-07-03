@@ -1,50 +1,50 @@
 export const options = [
     {
-        label: "Assosiatsiya -> Assosiatsiya haqida",
+        lable: "editor_options_1",
         value: "about"
     },
     {
-        label: "Assosiatsiya -> Nizom",
+        lable: "editor_options_2",
         value: "statute"
     },
     {
-        label: "Assosiatsiya -> Boshqaruv",
+        lable: "editor_options_3",
         value: "leadership"
     },
     {
-        label: "Faoliyat -> 2020 yil uchun hisobot",
+        lable: "editor_options_4",
         value: "report2020"
     },
     {
-        label: "Faoliyat -> 2019 yil uchun hisobot",
+        lable: "editor_options_5",
         value: "report2019"
     },
     {
-        label: "Faoliyat -> Mavjudligi",
+        lable: "editor_options_6",
         value: "accessibility"
     },
     {
-        label: "Faoliyat -> Seminar va konferanslar",
+        lable: "editor_options_7",
         value: "seminars"
     },
     {
-        label: "Faoliyat -> Kengash yig'ilishlari",
+        lable: "editor_options_8",
         value: "sessions"
     },
     {
-        label: "Kutubxona",
+        lable: "editor_options_9",
         value: "library"
     },
     {
-        label: "Matbuot-Markazi -> Yangiliklar",
+        lable: "editor_options_10",
         value: "news"
     },
     {
-        label: "Matbuot-Markazi -> Foto",
+        lable: "editor_options_11",
         value: "photo"
     },
     {
-        label: "Matbuot-Markazi -> Video",
+        lable: "editor_options_12",
         value: "video"
     }
 ]

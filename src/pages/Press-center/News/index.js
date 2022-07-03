@@ -22,7 +22,7 @@ export default function News() {
     const { t } = useTranslation()
     return (
         <div className='news'>
-            <h1>{t("press_center_photo_title")}</h1>
+            <h1>{t("press_center_news_title")}</h1>
             <div className='news-block'>
                 {posts.map((post) => {
                     console.log(post)
@@ -32,7 +32,7 @@ export default function News() {
                     const time = `${timeHour[0]}:${timeHour[1]}`
                     return (
                         <div>
-                            <Blocks image={`http://135.181.200.92:3005/${post.headImage}`} title={post.title} url={post._id} views="0" date={date[0]} published={time} menuId={menuId} />
+                            <Blocks image={`https://api.mamadaliyev.uz/imkoniyat/${post.headImage}`} title={post.title} url={post._id} views="0" date={date[0]} published={time} menuId={menuId} />
                         </div>
                     )
                 })}

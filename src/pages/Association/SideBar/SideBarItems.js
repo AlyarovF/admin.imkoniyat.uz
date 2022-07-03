@@ -1,26 +1,26 @@
 export const SideBarItems = [
     {
-        title: "About the Association",
+        key: "sidebar_about",
         url: "/about/#",
         cName: "bar-links"
     },
     {
-        title: "Statute",
+        key: "sidebar_statute",
         url: "/statute/#",
         cName: "bar-links"
     },
     {
-        title: "Leadership",
+        key: "sidebar_leadership",
         url: "/leadership/#",
         cName: "bar-links"
     },
     {
-        title: "List of members",
+        key: "sidebar_listofmember",
         url: "/list-of-members/#",
         cName: "bar-links"
     },
     {
-        title: "List of the board",
+        key: "sidebar_listoftheboard",
         url: "/list-of-the-board/#",
         cName: "bar-links"
     },

@@ -43,7 +43,7 @@ export default function Leadership() {
                             }
                             return (
                                 <div>
-                                    <LeaderPerson src={`http://135.181.200.92:3005/${post.headImage}`} who={post.shortText} fullname={post.title} caption={post.body} />
+                                    <LeaderPerson src={`https://api.mamadaliyev.uz/imkoniyat/${post.headImage}`} who={post.shortText} fullname={post.title} caption={post.body} />
                                     <div className='admin-tools'>
                                         <button onClick={handleDelete}><i className="fa-solid fa-trash"></i> {t("delete_button")}</button>
                                         {/* <button onClick={handleEdit}>{t("edit_button")}</button> */}

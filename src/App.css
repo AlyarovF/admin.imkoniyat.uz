@@ -79,6 +79,9 @@ html {
 
 
 
+.admin-tools {
+    margin-bottom: 10px;
+}
 
 .admin-tools button {
     background-color: #14284b;

@@ -137,4 +137,10 @@ export const MenuItems = [{
     }
     ]
 },
+{
+    key: 'navbar_editor',
+    url: '/editor',
+    cName: 'nav-links editor-link',
+    icon: "fa-solid fa-newspaper"
+},
 ]

@@ -34,7 +34,7 @@ export default function Photo() {
                     const time = `${timeHour[0]}:${timeHour[1]}`
                     return (
                         <div>
-                            <Blocks image={`http://135.181.200.92:3005/${post.headImage}`} title={post.title} url={post._id} views="0" date={date[0]} published={time} menuId={menuId} />
+                            <Blocks image={`https://api.mamadaliyev.uz/imkoniyat/${post.headImage}`} title={post.title} url={post._id} views="0" date={date[0]} published={time} menuId={menuId} />
                         </div>
                     )
                 })}
